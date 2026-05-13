@@ -1,0 +1,55 @@
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        p {
+            background-color: rgba(179, 20, 20, 0.664);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; cursive !important;
+            text-indent: 2em;
+            margin: 25px 10px 12px 60px;
+            padding: 40px;
+        }
+        div {
+            background-color: hsla(270, 70%, 34%, 0.7);
+            width: 50%;
+            height: 100px;
+        }
+        h1,
+        h2 {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 2em;
+            font-variant: small-caps;
+            letter-spacing: 10px;
+            text-align: center;
+            background-color: rgba(101, 122, 185, 0.5);
+        }
+
+        .important-info {
+            background-color: red;
+            color: #0056FF;
+            font-size: 1.5em; /* 16px * 1.5 = 24px */
+            font-family: 'Arial Black', Gadget, sans-serif;
+            text-decoration: uppercase;
+            font-weight: bold;
+        }
+
+        #id {
+            background-color: green;
+            font-family: 'Arial Black', Gadget, sans-serif;
+        }
+
+        #special-paragraph {
+            background-color: rgb(0, 225, 255);
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2em;
+            font-variant: small-caps;
+            letter-spacing: 10px;
+        }
+
+        .nowrap {
+            white-space: pre;
+            background-color: rgb(0, 123, 0);
+        }
+    </style>

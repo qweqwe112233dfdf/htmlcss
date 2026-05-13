@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 750px;
+    margin: 40px;
+}
+
+.card {
+    background: #1f5c5c;
+    color: #e6f2f2;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+dt {
+    background: #144747;
+    padding: 12px 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+dd {
+    margin: 0;
+    padding: 15px;
+    line-height: 1.6;
+}
+
+sup {
+    font-size: 0.75em;
+}
+
+.notes {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #333;
+}
+
+.notes p {
+    margin: 8px 0;
+}
