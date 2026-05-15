@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href=".resources/emage1.jpg">
+    <style>
+        .bg-green {
+            background-color: aquamarine;
+
+        }
+        .color-red {
+            color: blue;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: blanchedalmond;
+        }
+        /*img-container {
+            text-align: center;
+
+        } */
+        img {
+            display: block;
+            width: 40%;
+            margin: 5px auto;
+            padding: 5px;
+            /*border: black 2px; */
+            border-style: groove;
+            border-color: black;
+            border-width: 2px;
+            border-radius: 15px;
+            box-shadow: -5px -2px 0px black;
+        }
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            /*background-color: brown; */
+            border: solid black 2px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-image: url('./resources/image2.jpg');
+        }
+        .gradient {
+            width: auto;
+            height: 200px;
+            /*background: linear-gradient(45deg, blue,#ff6767, white);
+            background: radial-gradient(blue, pink); */
+            background: radial-gradient(circle at top left, blue, pink),
+                        linear-gradient(
+                            45deg,
+                            rgba(0, 0, 255, 0.288),
+                            #ff67346e,
+                            rgba(255, 192, 203, 0.511)),
+                        radial-gradient(
+                            circle
+                        )
+            /*background: conic-gradient(red, yellow, blue, red);*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Графіка в веб-дізайні</h1>
+
+    <div class="img-container">
+        <img src="./resources/image2.jpg" alt="kovalski1">
+        <img src="https://static.kinoafisha.info/k/articles/610/upload/editor/image-20251029114106-2.jpg" alt="kovalski2">
+    </div>
+
+    <div class="circle"></div>
+    <iframe src="second_page.html" frameborder="0"></iframe>
+    <iframe width="1410" height="793" src="https://www.youtube.com/embed/izV53Gu6H3c" title="Риболовний батл‼️ Ловля коропа та товстолоба на бюджетні снасті" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="gradient"></div>
+    <p class="bg-green color-red"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum id repudiandae iste.</p>
+    
+</body>
+</html>
