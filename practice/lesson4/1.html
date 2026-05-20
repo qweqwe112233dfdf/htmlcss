@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .progress-container {
+            width: 500px;
+            height: 80px;
+
+            padding: 5px;
+            border: 5px solid orange;
+            margin: 50px auto;
+        }
+        .progress-bar {
+            width: 150px;
+            height: 100%;
+            background-color: orange;
+            left: -150px;
+            animation-name: progress-anim;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes progress-anim {
+            0% {
+                left: -150px;
+            }
+            100% {
+                left: 500px;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+</body>
+</html>

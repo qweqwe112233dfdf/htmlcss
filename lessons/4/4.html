@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .button-container {
+            background-color: crimson;
+            color: black;
+            text-align: center;
+            padding: 5px;
+            border-radius: 15px;
+            width: 100px;
+        }
+
+        .link-button {
+            color: black;
+            text-decoration: none;
+        }
+
+        button {
+            background-color: crimson;
+            color: black;
+            text-align: center;
+            padding: 5px;
+            border-radius: 15px;
+            border: none;
+            width: 100px;
+            margin: 5px auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+        }
+
+        button:hover {
+            background-color: chocolate;
+            color: cornflowerblue;
+        }
+
+        .example {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transition: all 0.7s ease 0s;
+        }
+
+        .translate:hover {
+            transform: translate(125px, 120px);
+        }
+
+        .scale:hover {
+            transform: scale(105%);
+        }
+
+        .rotate:hover {
+            transform: rotate(60deg);
+        }
+
+        .rotateX:hover {
+            transform: rotateX(180deg);
+        }
+
+        .rotateY:hover {
+            transform: rotateY(60deg);
+        }
+
+        .rotateZ:hover {
+            transform: rotateZ(120deg);
+        }
+
+        .skew:hover {
+            transform: skew(50deg, 10deg)
+        }
+
+        .circle-container {
+            width: 400px;
+            height: 500px;
+            border: black solid 1px;
+            background-color: burlywood;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: cornflowerblue;
+            margin: 5px;
+            animation-name: circle-anim;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes circle-anim {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(338px, 0);
+            }
+            50% {
+                transform: translate(338px, 338px);
+            }
+            75% {
+                transform: translate(0, 338px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="circle-container">
+        <div class="circle"></div>
+    </div>
+
+
+    <div class="example translate"></div>
+    <div class="example scale"></div>
+    <div class="example rotate"></div>
+    <div class="example rotateX"></div>
+    <div class="example rotateY"></div>
+    <div class="example rotateZ"></div>
+    <div class="example skew"></div>
+    <p>
+        <a
+            href="https://uk.wikipedia.org/wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0">Гіперпосилання</a>
+        - це елемент html-сторінки, що перенаправляє на інший ресурс по посиланню.
+    </p>
+    <button>Натисни!</button>
+    <div class="button-container">
+        <a href="#" class="link-button">Натисни!</a>
+    </div>
+</body>
+
+</html>

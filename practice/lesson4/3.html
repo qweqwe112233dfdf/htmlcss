@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            width: 700px;
+            height: 500px;
+
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .icon{
+            position: absolute;
+            width: 100px;
+            transform: translateY(500px);
+            animation: moveUp 2s forwards;
+
+        }
+        .icon1 {
+            left: 80px;
+            top: 200px;
+            animation-delay: 0s;
+        }
+        .icon2 {
+            left: 200px;
+            top: 140px;
+            animation-delay: 0.5s;
+        }
+        .icon3 {
+            left: 350px;
+            top: 140px;
+            animation-delay: 1s;
+        }
+        .icon4 {
+            left: 520px;
+            top: 220px;
+            animation-delay: 1.5s;
+        }
+        .icon5 {
+            left: 300px;
+            top: 320px; 
+            animation-delay: 2s;
+
+        }
+        @keyframes moveUp {
+            from {
+                transform: translateY(500px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, my site!</h1>
+        <img src="/book.png" class="icon icon1">
+        <img src="/paper.png" class="icon icon2">
+        <img src="/" class="icon icon3">
+        <img src="" class="icon icon4">
+        <img src="" class="icon icon5">
+    </div>
+    
+</body>
+</html>
