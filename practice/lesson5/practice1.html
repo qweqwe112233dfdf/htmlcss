@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    body{
+        background:#f5f5f5;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table{
+        width:95%;
+        margin:20px auto;
+        border-collapse:collapse;
+        min-width:1200px;
+    }
+
+    caption{
+        text-transform:uppercase;
+        text-align:right;
+        color:#666;
+        font-weight:bold;
+        margin-bottom:10px;
+    }
+
+    th,
+    td{
+        border:1px solid #d9d9d9;
+        text-align:center;
+        width:45px;
+        height:50px;
+    }
+
+    /* Верхняя строка с часами */
+    thead th{
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        color:#1e315d;
+        background:#f2f2f2;
+        font-size:14px;
+    }
+
+    thead th:first-child{
+        writing-mode: horizontal-tb;
+        transform:none;
+        width:170px;
+        background:white;
+        border-right:1px solid #d9d9d9;
+    }
+
+    /* Дни недели */
+    tbody td:first-child{
+        text-align:left;
+        padding-left:15px;
+        font-weight:bold;
+        font-size:18px;
+        color:#1e315d;
+        background:white;
+        width:170px;
+    }
+
+    /* Активный день */
+    .active-day{
+        background:#ffe600 !important;
+    }
+
+    /* Серые блоки */
+    .gray{
+        background:#ececec;
+    }
+
+    /* Самолет */
+    span{
+        font-size:20px;
+        display:inline-block;
+        transform:rotate(-45deg);
+        color:#1e315d;
+        font-weight:bold;
+    }
+
+    /* Светлый самолет */
+    .light{
+        opacity:0.25;
+    }
+
+    /* Желтая линия */
+    tbody tr:first-child td{
+        border-top:3px solid #ffe600;
+    }
+    .icon{
+    width:22px;
+    height:22px;
+    object-fit:contain;
+    transform:rotate(-45deg);
+}
+
+/* Светлая версия */
+.icon.light{
+    opacity:0.25;
+}
+
+    </style>
+</head>
+<body>
+    <table>
+
+    <caption>Графік відключення світла</caption>
+
+    <thead>
+        <tr>
+            <th></th>
+
+            <th>00:00</th>
+            <th>01:00</th>
+            <th>02:00</th>
+            <th>03:00</th>
+            <th>04:00</th>
+            <th>05:00</th>
+            <th>06:00</th>
+            <th>07:00</th>
+            <th>08:00</th>
+            <th>09:00</th>
+            <th>10:00</th>
+            <th>11:00</th>
+            <th>12:00</th>
+            <th>13:00</th>
+            <th>14:00</th>
+            <th>15:00</th>
+            <th>16:00</th>
+            <th>17:00</th>
+            <th>18:00</th>
+            <th>19:00</th>
+            <th>20:00</th>
+            <th>21:00</th>
+            <th>22:00</th>
+            <th>23:00</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <!-- Понедельник -->
+        <tr>
+
+            <td>Понеділок</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+        </tr>
+
+        <!-- Вторник -->
+        <tr>
+
+            <td>Вівторок</td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+
+        <!-- Среда -->
+        <tr>
+
+            <td>Середа</td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+
+        </tr>
+        <tr>
+
+            <td>Четвер</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+
+        </tr>
+        <tr>
+
+            <td class="active-day">П`ятниця</td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+
+
+        </tr>
+        <tr>
+
+            <td>Субота</td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+
+        </tr>
+        <tr>
+
+            <td>Неділя</td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon">
+            </td>
+
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+            <td class="gray">
+                <img src="/lamp.jpg" alt="lamp" class="icon light">
+            </td>
+
+
+        </tr>
+
+    </tbody>
+
+</table>
+
+</body>
+</html>

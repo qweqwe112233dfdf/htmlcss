@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p {
+            transition: all 1s ease 0s;
+        } */
+        p:hover {
+            animation-name: change-text;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes change-text {
+            from {
+                color: black;
+            }
+            to {
+                color: chocolate;
+            }
+        }
+
+        td > img {
+            width: 150px;
+        }
+        
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+            margin
+
+        }
+        td:first-child {
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 0.4em;
+        }
+        tr:not(:first-child) {
+            
+            height: 50px;
+
+        }
+        tr {
+            height: 150px;
+        }
+        thead {
+            background-color: aquamarine;
+        }
+        tfoot {
+            text-align: center;
+            background-color: aqua;
+        }
+        tfoot > tr > td{
+            padding: 0;
+        }
+        .highlight {
+            background-color: cornflowerblue;
+        }
+        .empty-cells-table {
+            border-collapse: separate;
+            empty-cells: hide;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col>
+            <col class="highlight">
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Аватар</th>
+                <th>Ім'я</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="/calc.png" alt="calc"></td>
+                <td><span>calc</span></td>
+                <td><a href="oapwdjpai@gmail.com">oapwdjpai@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td><img src="/book.png" alt="book"></td>
+                <td><span>book</span></td>
+            <td><a href="fgauiwgdawdiu@gmail.com">fgauiwgdawdiu@gmail.com</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><p>Це футер таблиці</td></p>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <tr>
+            <th colspan="3">Full Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>
+                Jill
+            </td>
+            <td>Smith</td>
+            <td>53</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>57</td>
+        </tr>
+        <tr>
+            <th colspan="2">Phone</th>
+            <td>555-1234</td>
+        </tr>
+        <tr>
+            <td>555-8745</td>
+        </tr>
+    </table>
+    <table class="empty-cells-table">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td>Lorem, ipsum dolor.</td>
+            <td>Lorem, ipsum.</td>
+            <td>Lorem, ipsum dolor.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Lorem, ipsum.</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, qui.</p> -->
+</body>
+</html>
