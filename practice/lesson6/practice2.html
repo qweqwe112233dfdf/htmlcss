@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu {
+            background-color: darkgreen;
+        }
+        .menu ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .menu > ul{
+            display: flex;
+        }
+        .menu ul li{
+            position: relative;
+        }
+        .menu ul li a{
+            display: block;
+            padding: 15px 30px;
+            color: white;
+            text-decoration: none;
+        }
+        .menu ul li:hover{
+            background-color: green;
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: darkgreen;
+            min-width: 180px;
+        }
+        .menu li:hover > .submenu{
+            display: block;
+        }
+        .submenu li{
+            position: relative;
+        }
+        .submenu_2{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color: darkgreen;
+            min-width: 180px;
+        }
+        .submenu li:hover > .submenu_2 {
+            display: block;
+        }
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#" class="href">Home</a></li>
+            <li>
+                <a href="#" class="href">Categories</a>
+                <ul class="submenu">
+                    <li><a href="#">Men</a>
+                        <ul class="submenu_2">
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Hats</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Women</a>
+
+                        <ul class="submenu_2">
+                            <li><a href="#">Dress</a></li>
+                            <li><a href="#">Pants</a></li>
+                            <li><a href="#">Shoes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Kids</a>
+                        <ul class="submenu_2">
+                            <li><a href="#">Toys</a></li>
+                            <li><a href="#">Clothes</a></li>
+                            <li><a href="#">Dolls</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
+
+        </ul>
+    </nav>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, perspiciatis harum. Sed asperiores quia, eligendi obcaecati facilis voluptatem excepturi magnam consectetur reiciendis atque tempore rerum. Beatae fuga expedita hic quisquam repellendus voluptatibus alias dolor quam consequuntur blanditiis esse, unde praesentium maiores itaque error ipsum illum ipsam molestiae! Ipsum voluptate, fugiat consectetur, vitae aliquid quibusdam earum repudiandae ullam aspernatur sint molestiae tempora. Inventore error reprehenderit dolor, laudantium adipisci impedit tenetur similique iusto voluptas voluptate earum, quod et quasi illum perferendis non quas dicta. Laudantium impedit nihil nemo. Et vel ullam quisquam delectus omnis, velit, nesciunt aliquid eum, porro dolore dolorum laudantium consequuntur dicta. Explicabo dolore aut sit exercitationem ipsa. Laborum nostrum libero enim quia iste laboriosam facere illum quos rem vero ab, suscipit fugiat facilis saepe voluptas provident et blanditiis eius nihil odit error eligendi repellat maxime culpa? Officiis eos vel vitae, deleniti sapiente ratione explicabo nemo consectetur itaque suscipit architecto provident reiciendis nihil quod labore voluptate voluptates minima mollitia eveniet iste cupiditate! Nam excepturi iure accusamus, asperiores dolor reiciendis ratione a saepe natus voluptas nisi dolorum distinctio modi porro, vero ipsum! Officiis molestiae aliquid provident eaque id, porro quam ipsam consectetur, exercitationem aspernatur sapiente amet nihil beatae mollitia vel natus quod consequatur nostrum necessitatibus iste dolorem repellat magni laborum. Repellat animi esse ut. Asperiores ipsa qui assumenda facilis unde quo quos ab. Eveniet asperiores praesentium ducimus illo aut voluptates ut alias tempore nam, omnis molestiae quasi a, officiis ea natus sit harum dignissimos iusto quia, eum neque exercitationem. Error assumenda fugit voluptates. Aspernatur recusandae aliquid quo maiores eius architecto iure distinctio impedit, assumenda, vitae ducimus quia odit ipsa! Dicta nostrum neque voluptatum eaque ipsa, deleniti et cum magnam quia dolorum quas mollitia dolorem a nemo adipisci ex dignissimos delectus, itaque alias! Accusantium, tempora blanditiis! Veritatis officiis enim eveniet ad nam!</p>
+    </div>
+    
+</body>
+</html>

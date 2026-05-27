@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1, h7 {
+            margin: 10px;
+        }
+        .div-demo {
+            background-color: darksalmon;
+            border: solid black 2px;
+            width: 200px;
+            height: 50px;
+
+            text-align: center;
+        }
+        .pos-stat {
+            position: static;
+        }
+        .pos-rel {
+            position: relative;
+            left: 50px; 
+            /*right: 60px; */
+            top: 100px; 
+            /*bottom: 30px; */
+        }
+        .pos-fixed {
+            position: fixed;
+            top: 500px;
+            right: 200px;
+        }
+        .top-fixed {
+            position: fixed;
+            top:0px;
+        }
+
+        .rel-parent {
+            width: 400px;
+            height: 150px;
+            border: solid 1px black;
+            position: relative;
+            left: 25px;    
+        }
+        .pos-abs {
+            position: absolute;
+            left: 50px;
+        }
+        .pos-sticky {
+            position: sticky;
+            top: 10;
+            /*z-index: 10; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Статичне позиціонування</h1>
+    <h2>Статичне позиціонування</h2>
+    <div class="div-demo pos-stat">position: static;</div>
+
+    <div class="div-demo pos-sticky">position: sticky</div>
+
+    <h2>Відносне позиціонування</h2>
+    <div class="div-demo pos-rel">position: relative</div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, dolorem? Et fugit facilis architecto aperiam. Architecto magni tempora ipsam eius libero odit laudantium consectetur similique, a doloribus iste voluptas repudiandae.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio illum aliquid laborum quos, sequi, repudiandae optio sed aut labore debitis blanditiis, eum officiis porro? Earum, fugiat, molestias laborum voluptatum cupiditate in perferendis qui temporibus laudantium facere voluptates, quis impedit nam accusantium amet! Deleniti numquam soluta explicabo suscipit, deserunt nam esse vitae aspernatur quidem eum dolor quaerat velit distinctio doloremque corrupti.</p>
+
+     <div class="div-demo pos-fixed">position: fixed</div> 
+    <!--<div class="div-demo top-fixed">fixed on the top</div> -->
+    <div class="rel-parent">
+        <div class="div-demo pos-abs">position: absolute</div>
+
+    
+    </div>
+    <div class="div-demo pos-abs">position: absolute</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quae sint soluta dolores sed aut officia perspiciatis est amet quidem, voluptates adipisci facere labore temporibus nihil fugit illo deleniti minus delectus. Sit impedit saepe assumenda recusandae et numquam omnis rerum molestiae vero id voluptate nam, fuga ipsa velit beatae esse blanditiis, voluptatibus soluta. Consequuntur corrupti quasi temporibus! Debitis in necessitatibus molestias explicabo iusto optio vel est dignissimos fugit commodi quisquam, voluptate voluptatem ut ex? Eligendi officia excepturi neque perspiciatis incidunt consectetur molestias eos? Placeat officia natus obcaecati nobis. Odio voluptas saepe, ipsam ea soluta beatae ut voluptates officiis ducimus perferendis amet nisi enim sapiente eum fugit eligendi facere! Sunt molestias, ratione, doloremque tempora at quibusdam, magni iure nesciunt enim harum necessitatibus a ex rem totam exercitationem! Doloribus voluptatibus consequatur quod commodi? Quod assumenda pariatur numquam dolor deleniti ad provident, officiis porro atque consectetur rerum. Vero, soluta. A deserunt maiores veritatis consequatur non impedit voluptate excepturi autem architecto? Consequatur necessitatibus quibusdam iusto eveniet? Dolore expedita aliquid alias incidunt sed, deserunt illum voluptatem ex culpa ipsum voluptate consectetur sequi earum repellat consequuntur? Odio eum neque numquam voluptas maiores assumenda saepe quas ipsa voluptatem? Deserunt enim hic corrupti culpa possimus nostrum error ut?</p>
+</body>
+</html>
