@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 80px;
+      height: 100vh;
+      background-color: gray;
+      overflow: hidden;
+      transition: width 1s;
+      z-index: 1000;
+    }
+
+    .sidebar:hover {
+      width: 250px;
+    }
+
+    .menu {
+      list-style: none;
+      margin-top: 40px;
+    }
+
+    .menu li {
+      padding: 20px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+      white-space: nowrap;
+    }
+
+    .menu li:hover {
+      background-color: #5f5f5f;
+    }
+
+    .menu li span {
+      margin-left: 15px;
+      font-size: 18px;
+    }
+
+    .content {
+      margin-left: 80px;
+      padding: 40px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      max-width: 800px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <ul class="menu">
+      <li>🏠 <span>Головна</span></li>
+      <li>❤️ <span>Обране</span></li>
+      <li>📄 <span>Документи</span></li>
+      <li>⚙️ <span>Налаштування</span></li>
+      <li>📞 <span>Контакти</span></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>WHAT IS LOREM IPSUM?</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem provident a doloremque ipsam vel! Error laborum eligendi pariatur corporis tempora maiores, fugit harum, vitae, consequuntur autem iusto reiciendis mollitia enim perspiciatis ea numquam nesciunt quos ullam ad et beatae impedit doloremque dicta! Voluptas dignissimos recusandae sint voluptates modi ipsum iure eum? Numquam magnam autem sed quo excepturi impedit hic nisi earum accusantium quas fugiat, architecto quis, aliquid doloribus voluptatem quod cumque, ullam officia neque possimus quisquam tenetur voluptates praesentium fuga? Nesciunt itaque in labore eveniet eaque, quisquam voluptatibus praesentium, atque asperiores sequi numquam neque et possimus, nisi aut aperiam.</p>
+    
+    <h1>WHY DO WE USE IT?</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis qui nesciunt rem repudiandae rerum fugit repellat quod id, praesentium et minima! Iure nemo dignissimos optio ullam a neque tempora eligendi, temporibus laudantium. Dolorum est esse iste harum error vero fuga voluptatum, nulla cum natus quod rem earum, quo hic, expedita temporibus necessitatibus optio! Vel, rem sunt et, illo illum quae blanditiis veniam impedit aliquam porro similique quia ratione ullam natus ducimus sed autem corrupti eligendi adipisci. Velit necessitatibus ab tenetur optio ipsum quam maiores laboriosam aliquam, ipsam neque modi autem, saepe rem assumenda dolor ratione officia culpa. Omnis, veniam optio!</p>
+    
+    <h1>WHERE DOES IT COME FROM?</h1>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nesciunt repellendus maiores doloremque accusantium dolorem, ducimus dicta dignissimos in quae harum, officia, fugit quis beatae! Ab quidem, quaerat sint voluptatum voluptas minus aperiam accusamus cupiditate quasi unde neque recusandae a officiis deleniti quisquam mollitia nihil dolores alias aliquid rerum voluptatibus doloribus distinctio aspernatur illum? Doloremque, qui ex iure accusantium quidem voluptate expedita nemo repellat culpa ipsam dolor error officia deserunt vero, architecto laudantium sapiente, pariatur ab ratione similique cum repellendus est alias blanditiis! Ab eaque architecto quia neque autem adipisci omnis minima ipsum, perspiciatis ipsa dolore voluptates? Quibusdam, voluptate autem.</p>
+  </div>
+
+</body>
+</html>

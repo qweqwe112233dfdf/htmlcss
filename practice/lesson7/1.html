@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      width: 250px;
+      border: 2px solid #2c3e50;
+      background-color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: red;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      background-color: #1f3558;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #34495e;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="/4yma.jpg" alt="Товар">
+      <h3>Назва товару</h3>
+      <p>Короткий опис товару</p>
+      <div class="price">1000 грн</div>
+      <button class="btn">Купити</button>
+    </div>
+
+    <div class="card">
+      <img src="/4yma.jpg" alt="Товар">
+      <h3>Назва товару</h3>
+      <p>Короткий опис товару</p>
+      <div class="price">1200 грн</div>
+      <button class="btn">Купити</button>
+    </div>
+
+    <div class="card">
+      <img src="/4yma.jpg" alt="Товар">
+      <h3>Назва товару</h3>
+      <p>Короткий опис товару</p>
+      <div class="price">1500 грн</div>
+      <button class="btn">Купити</button>
+    </div>
+
+    <div class="card">
+      <img src="/4yma.jpg" alt="Товар">
+      <h3>Назва товару</h3>
+      <p>Короткий опис товару</p>
+      <div class="price">1800 грн</div>
+      <button class="btn">Купити</button>
+    </div>
+    <div class="card">
+      <img src="/4yma.jpg" alt="Товар">
+      <h3>Назва товару</h3>
+      <p>Короткий опис товару</p>
+      <div class="price">2100 грн</div>
+      <button class="btn">Купити</button>
+    </div>
+    <div class="card">
+      <img src="/4yma.jpg" alt="Товар">
+      <h3>Назва товару</h3>
+      <p>Короткий опис товару</p>
+      <div class="price">2500 грн</div>
+      <button class="btn">Купити</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
