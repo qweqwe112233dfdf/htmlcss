@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0.5em;
+        }
+
+
+        .tabs-container {
+            display: flex;
+            gap: 20px;
+
+            background-color: rgb(83, 83, 83);
+            padding: 15px;
+        }
+
+        .tabs {
+            width: 100px;
+        }
+
+        .tab {
+            padding: 15px;
+            color: white;
+            background-color: rgb(138, 138, 138);
+            border-bottom: 1px solid rgb(83, 83, 83);
+        }
+
+        .tab:hover {
+            background-color: rgb(122, 121, 121);
+        }
+
+        .active {
+            background-color: rgb(74, 74, 74);
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            flex-grow: 1;
+            color: white;
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+        }
+
+        .card h3 {
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tabs-container">
+
+        <div class="tabs">
+            <div class="tab active">Tab 1</div>
+            <div class="tab">Tab 2</div>
+            <div class="tab">Tab 3</div>
+        </div>
+
+        <div class="content">
+
+            <div class="card">
+                <img src="/paper.png" alt="photo1">
+
+                <h3>Header 1</h3>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, voluptates.</p>
+            </div>
+
+            <div class="card">
+                <img src="/book.png" alt="photo2">
+
+                <h3>Header 2</h3>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, reprehenderit.</p>
+            </div>
+
+            <div class="card">
+                <img src="/lamp.jpg" alt="photo3">
+
+                <h3>Header 3</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, voluptatum?</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
