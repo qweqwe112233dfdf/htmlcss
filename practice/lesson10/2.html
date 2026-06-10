@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 30px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0;
+        }
+        .article h2 {
+            margin-bottom: 15px;
+        }
+        .article p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .menu-block {
+            border-radius: 6px;
+            overflow: hidden;
+            background-color: lightblue;
+        }
+        .menu-block h3 {
+            background-color: darkblue;
+            color: antiquewhite;
+            padding: 12px;
+        }
+        .menu-block ul {
+            list-style: none;
+        }
+        .menu-block li {
+            padding: 10px 12px;
+            border-top: 1px solid antiquewhite;
+        }
+        @media screen (min-width:801px){
+            .container {
+                display: flex;
+                gap: 40px;
+            }
+            .article {
+                flex: 3;
+            }
+            .sidebar {
+                flex:1;
+                display: flex;
+                flex-direction: column;
+                gap:20px;
+            }
+        }
+        @media screen (min-width:600px) and (max-width:800px){
+            .container {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+            }
+            .sidebar {
+                display: flex;
+                gap:20px;
+            }
+            .menu-block {
+                flex: 1;
+            }
+        }
+        @media screen (max-width:599) {
+            .container {
+                display: flex;
+                flex-direction:column;
+                gap: 20px;
+            }
+            .sidebar {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <header>Introduction</header>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi quod voluptas eum maxime voluptate officiis fugiat tenetur, in dolores doloribus temporibus ratione harum praesentium molestias excepturi dicta? Optio, dolores aliquid delectus numquam in vitae. Error perspiciatis ea dolore, veniam amet animi fuga deserunt consequuntur magni aspernatur aperiam obcaecati dolorum eum debitis quaerat voluptatum cupiditate sunt quia nulla iusto quas itaque architecto! Consectetur saepe voluptates libero omnis blanditiis! Est dolor provident tempora et consequatur architecto harum repellat consectetur sequi animi? Minima, tempore et provident adipisci inventore ad hic? Nihil, fugit officiis voluptatem amet odit enim, ut excepturi culpa dicta, debitis praesentium?</p>
+            <header>Additional infromation</header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque reprehenderit consequuntur nesciunt molestiae dignissimos excepturi laboriosam sapiente cupiditate ipsam et dolores consequatur, eum quas hic minus recusandae expedita deserunt dolore omnis nemo aliquid dolorum? Excepturi adipisci aperiam soluta, nihil iure pariatur vero facere suscipit esse neque sequi, quaerat obcaecati natus explicabo tempore sint vel repellendus placeat quos. Aperiam quidem debitis quaerat aut hic odio autem alias vel nulla fugit! Similique quos quasi, laboriosam quia ducimus saepe fugiat minus explicabo incidunt, aliquam distinctio laborum, tenetur rem! Cumque et tempora, doloribus quisquam, alias veniam eveniet beatae iusto molestias magni dignissimos, laudantium quis incidunt sequi voluptates ea qui cupiditate explicabo enim neque? Reiciendis nulla rerum molestias adipisci nemo placeat natus eveniet dolorum ullam aspernatur molestiae eos, quis exercitationem earum suscipit dolore consectetur voluptatem libero, quaerat voluptatibus incidunt. Doloribus suscipit voluptates minus explicabo! Laudantium sunt eaque sit expedita odit porro vel quam soluta sed numquam fuga placeat enim labore maxime dolorem nihil, aliquid eos deserunt, exercitationem, quibusdam tenetur adipisci debitis accusantium minus. Iusto quisquam maxime magnam odit incidunt ipsam architecto veniam quia? Beatae, animi blanditiis. Omnis optio tenetur, facilis ea molestias assumenda tempora praesentium distinctio expedita veniam itaque fugit sit ipsum esse quasi? Mollitia sed itaque dignissimos corporis ut numquam repellat alias quod rerum eos tenetur, sunt enim omnis. Rerum sed, sequi culpa deserunt veritatis reprehenderit facere a impedit eligendi ad aperiam libero tempore quae repellat minima ducimus adipisci ipsa aspernatur aut, possimus quas nostrum quia magnam. Animi, quibusdam. Enim facilis animi sed nesciunt quasi dignissimos vero facere iste non laborum atque aut ut obcaecati suscipit impedit, ducimus doloremque corporis perferendis blanditiis distinctio? Reprehenderit, harum. Rem sint illo, quia eius dolorem numquam sed commodi doloremque. Quod, totam accusantium debitis similique sit qui, aut quaerat, minus molestiae commodi corrupti rem ab. Ipsam odit vero aut.</p>
+        </main>
+        <aside>
+            <section>
+                <h3>Actions</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quisquam.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, dolor?</li>                
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nisi.</li>
+                </ul>
+            </section>
+        </aside>
+        
+    </div>
+    
+</body>
+</html>

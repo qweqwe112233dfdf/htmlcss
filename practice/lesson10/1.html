@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            display: flex;
+            border: 2px solid black;
+            padding: 10px;
+            gap: 15px;
+        }
+        .image {
+            flex:1;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+        }
+        .info {
+            flex: 2;
+        }
+        .progress {
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            margin-bottom: 15px;
+            background-color: lightgrey;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .text{
+            color: grey;
+            font-size: 14px;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+        }
+        button {
+            background-color: blue;
+            border: none;
+            color: aquamarine;
+            padding: 15px 30px;
+        }
+        @media screen (max-width:600px){
+            .container {
+                flex-direction: column;
+            }
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="/upload.png" alt="upload">
+        </div>
+        <div class="info">
+            <div class="progress">
+                <span>Uploading 40%</span>
+                <span>About 20 minutes remaining</span>
+            </div>
+            <div class="title">
+                Title of video
+            </div>
+            <div class="text">
+                * Your video is still uploading. Please keep this page open until its done
+            </div>
+            <div class="button">
+                <button>DONE</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
