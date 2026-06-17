@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+
+            background: url("/background.png") center/cover no-repeat;
+        }
+
+        form {
+            width:700px;
+            padding:30px;
+
+            background-color: rgba(0, 0, 0, 0.603);
+            border:2px solid grey;
+
+            color:white;
+        }
+
+        h1{
+            margin-bottom:15px;
+        }
+
+        p{
+            margin-bottom:30px;
+            font-size:14px;
+        }
+
+        .row{
+            display:flex;
+            margin-bottom:15px;
+            align-items:center;
+        }
+
+        .row label{
+            width:120px;
+        }
+
+        .inputs{
+            flex:1;
+            display:flex;
+            gap:10px;
+        }
+
+        input,
+        select,
+        textarea{
+            width:100%;
+            padding:8px;
+            border:none;
+        }
+
+        textarea{
+            height:100px;
+            resize:none;
+        }
+
+        hr{
+            margin:20px 0;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+
+            background:transparent;
+            color:white;
+            border:1px solid white;
+
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:rgba(255, 255, 255, 0.363);
+        }
+    </style>
+</head>
+<body>
+
+<form>
+
+    <h1>Contact form</h1>
+
+    <p>Please fill in your information and we'll be sending your order</p>
+
+    <div class="row">
+        <label>Your name</label>
+
+        <div class="inputs">
+            <input type="text" placeholder="first name">
+            <input type="text" placeholder="last name">
+        </div>
+    </div>
+
+    <div class="row">
+        <label>Your email</label>
+
+        <div class="inputs">
+            <input type="email" placeholder="email@gmail.com">
+        </div>
+    </div>
+
+    <div class="row">
+        <label>Phone</label>
+
+        <div class="inputs">
+            <input type="text" placeholder="000">
+            <input type="text" placeholder="000">
+            <input type="text" placeholder="0000">
+        </div>
+    </div>
+
+    <div class="row">
+        <label>Message subject</label>
+
+        <div class="inputs">
+            <select>
+                <option>Other</option>
+                <option>Question</option>
+                <option>Suggestion</option>
+                <option>Complaint</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <label>Message</label>
+
+        <div class="inputs">
+            <textarea></textarea>
+        </div>
+    </div>
+
+    <hr>
+
+    <button type="submit">Submit Form</button>
+
+</form>
+
+</body>
+</html>
