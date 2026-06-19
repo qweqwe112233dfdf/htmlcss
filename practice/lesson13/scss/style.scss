@@ -1,0 +1,30 @@
+$primary-color: #0066cc;
+$text-color: white;
+$background-color: #f5f5f5;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+header {
+    background-color: $primary-color;
+    color: $text-color;
+    text-align: center;
+    padding: 2px;
+}
+main {
+    background-color: $background-color;
+    color: black;
+    min-height: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+footer {
+    background-color: rgb(10, 10, 53);
+    color: $text-color;
+    text-align: center;
+    padding: 20px;
+}
