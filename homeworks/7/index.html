@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .plans {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .plan {
+            width: 250px;
+            height: 320px;
+            padding: 30px 20px;
+
+            background-color: white;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+
+            text-align: center;
+
+            transition: transform 1s ease;
+        }
+
+        .plan:hover {
+            transform: scale(1.1);
+        }
+
+        .plan h2 {
+            margin: 0 0 20px;
+            font-size: 28px;
+        }
+
+        .price {
+            margin-bottom: 25px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .plan ul {
+            padding: 0;
+            margin: 0 0 25px;
+            list-style: none;
+        }
+
+        .plan li {
+            margin: 10px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 25px;
+
+            color: white;
+            background-color: #333;
+            border-radius: 5px;
+
+            text-decoration: none;
+        }
+
+        .basic {
+            border-color: #aaa;
+        }
+
+        .standard {
+            border-color: #3498db;
+        }
+
+        .premium {
+            border-color: #9b59b6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="plans">
+
+        <div class="plan basic">
+            <h2>Basic</h2>
+
+            <div class="price">$10</div>
+
+            <ul>
+                <li>1 користувач</li>
+                <li>5 Гб пам'яті</li>
+                <li>Базова підтримка</li>
+            </ul>
+
+            <a href="#" class="button">Обрати</a>
+        </div>
+
+        <div class="plan standard">
+            <h2>Standard</h2>
+
+            <div class="price">$20</div>
+
+            <ul>
+                <li>5 користувачів</li>
+                <li>50 Гб пам'яті</li>
+                <li>Пріоритетна підтримка</li>
+            </ul>
+
+            <a href="#" class="button">Обрати</a>
+        </div>
+
+        <div class="plan premium">
+            <h2>Premium</h2>
+
+            <div class="price">$30</div>
+
+            <ul>
+                <li>Необмежена кількість</li>
+                <li>100 Гб пам'яті</li>
+                <li>Преміум підтримка</li>
+            </ul>
+
+            <a href="#" class="button">Обрати</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
