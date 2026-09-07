@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .clock {
+            position: relative;
+
+            width: 300px;
+            height: 300px;
+
+            border: 10px solid #222;
+            border-radius: 50%;
+
+        }
+
+        .center {
+            position: absolute;
+
+            width: 18px;
+            height: 18px;
+
+            background: black;
+            border-radius: 50%;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            z-index: 10;
+        }
+
+        .hand {
+            position: absolute;
+
+            left: 50%;
+            bottom: 50%;
+
+            transform-origin: bottom center;
+
+            border-radius: 10px;
+        }
+
+        .hour {
+            width: 10px;
+            height: 75px;
+
+            background: #222;
+
+            animation: clock-hour 60s linear infinite;
+        }
+
+        .minute {
+            width: 6px;
+            height: 105px;
+
+            background: #555;
+
+            animation: clock-minute 10s linear infinite;
+        }
+
+        @keyframes clock-hour {
+            from {
+                transform: translateX(-50%) rotate(0deg);
+            }
+
+            to {
+                transform: translateX(-50%) rotate(360deg);
+            }
+        }
+
+        @keyframes clock-minute {
+            from {
+                transform: translateX(-50%) rotate(0deg);
+            }
+
+            to {
+                transform: translateX(-50%) rotate(360deg);
+            }
+        }
+
+        .number {
+            position: absolute;
+
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        .n12 {
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .n3 {
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .n6 {
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .n9 {
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="clock">
+
+    <div class="number n12">12</div>
+    <div class="number n3">3</div>
+    <div class="number n6">6</div>
+    <div class="number n9">9</div>
+
+    <div class="hand hour"></div>
+    <div class="hand minute"></div>
+
+    <div class="center"></div>
+
+</div>
+
+</body>
+</html>

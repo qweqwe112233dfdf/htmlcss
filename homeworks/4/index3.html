@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px;
+
+            background: #eeeeee;
+
+            font-family: Arial, sans-serif;
+        }
+
+        .blocks {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .block {
+            position: relative;
+
+            display: flex;
+
+            width: 100%;
+            height: 250px;
+
+            margin-bottom: 30px;
+
+            overflow: hidden;
+
+            background: white;
+        }
+
+        .text {
+            width: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 30px;
+
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .image-container {
+            width: 50%;
+            height: 100%;
+
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: transform 1s ease;
+        }
+
+        .block::after {
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background: rgba(0, 0, 0, 0);
+
+            pointer-events: none;
+
+            transition: background 0.3s ease;
+        }
+
+        .block:hover::after {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .block:hover .image-container img {
+            transform: scale(1.15);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="blocks">
+
+    <div class="block">
+
+        <div class="text">
+            <p>
+                Youtube
+            </p>
+        </div>
+
+        <div class="image-container">
+            <img src="/youtube.png"alt="youtube">
+        </div>
+
+    </div>
+
+    <div class="block">
+
+        <div class="text">
+            <p>
+                Instagram
+            </p>
+        </div>
+
+        <div class="image-container">
+            <img src="/insta.png" alt="Instagram">
+        </div>
+
+    </div>
+
+    <div class="block">
+
+        <div class="text">
+            <p>
+                Facebook
+            </p>
+        </div>
+
+        <div class="image-container">
+            <img src="/fb.png" alt="facebook">
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
