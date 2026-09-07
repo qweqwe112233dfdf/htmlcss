@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 13px;
+    color: #222;
+}
+
+th, td {
+    border: 1px solid #999;
+    text-align: center;
+    vertical-align: middle;
+    padding: 7px 5px;
+    line-height: 1.25;
+}
+
+.aspect {
+    width: 12%;
+    background-color: #fff1a8;
+}
+
+.simple {
+    background-color: #bfc1f5;
+}
+
+.progressive {
+    background-color: #ffb5b8;
+}
+
+.perfect {
+    background-color: #a8f0c8;
+}
+
+.perfect-progressive {
+    background-color: #efa8ee;
+}
+
+th {
+    font-weight: bold;
+}
+
+tr:first-child th {
+    height: 52px;
+    font-size: 13px;
+}
+
+
+.meaning {
+    background-color: #fff1a8;
+    writing-mode: horizontal-tb;
+}
+
+.italic {
+    font-style: italic;
+    color: #555;
+    height: 38px;
+}
+
+.question-text {
+    height: 43px;
+}
+
+.period {
+    font-size: 11px;
+    font-style: italic;
+    color: #444;
+}
+
+
+.period-title {
+    background-color: #fff1a8;
+    font-weight: normal;
+    font-style: normal;
+    width: 9%;
+}
+
+.sign {
+    background-color: #fff1a8;
+    width: 5%;
+    font-size: 14px;
+}
+
+
+.past-period, .future-period {
+    background-color: #fff1a8;
+    text-align: left;
+    padding-left: 10px;
+}
+
+td {
+    font-size: 13px;
+}
+
+sub {
+    font-size: 9px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 5px;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    th,
+    td {
+        padding: 4px 2px;
+    }
+
+    .period {
+        font-size: 8px;
+    }
+
+    td {
+        font-size: 9px;
+    }
+}
