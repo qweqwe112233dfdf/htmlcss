@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .image-box {
+            position: relative;
+            width: 700px;
+            margin: 60px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .image-box img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .description {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 20px;
+
+            background: rgba(0, 0, 0, 0.75);
+
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .image-box:hover .description {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="image-box">
+
+        <img src="/background.png" alt="Зображення">
+
+        <div class="description">
+            <h2>Project Title</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, nostrum.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

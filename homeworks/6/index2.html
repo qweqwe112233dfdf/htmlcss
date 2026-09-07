@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вільям Шекспір</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+            color: #333;
+        }
+
+        .container {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        .menu {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #333;
+        }
+
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+
+        .menu li {
+            flex: 1;
+        }
+
+        .menu a {
+            display: block;
+            padding: 18px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            background-color: #444;
+            transition: background-color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #222;
+        }
+
+        main {
+            background-color: white;
+            padding: 30px;
+            min-height: 1000px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            color: #555;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        .photo {
+            display: block;
+            width: 250px;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        .info {
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin-top: 20px;
+            border-left: 5px solid #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#biography">Біографія</a></li>
+                <li><a href="#works">Творчість</a></li>
+                <li><a href="#facts">Факти</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section id="home">
+                <h1>Вільям Шекспір</h1>
+
+                <img class="photo" src="/shakespeare.jpg" alt="Вільям Шекспір">
+
+                <p>
+                    Вільям Шекспір — англійський поет, драматург та актор, якого вважають одним із найвидатніших письменників англійської мови та одним із найвідоміших драматургів світу.
+                </p>
+            </section>
+
+            <section id="biography">
+                <h2>Біографія</h2>
+
+                <p>
+                    Вільям Шекспір народився 26 квітня 1564 року у Стратфорді-на-Ейвоні, графство Ворикшир. У віці 18 років він одружився з Енн Гетевей.
+                </p>
+
+                <p>
+                    У подружжя було троє дітей: Сюзанна, а також близнюки Гамнет і Джудіт. Пізніше Шекспір розпочав успішну кар'єру в Лондоні як актор і письменник.
+                </p>
+
+                <div class="info">
+                    Основні дати:<br><br>
+                    Народився: 26 квітня 1564 року<br>
+                    Помер: 23 квітня 1616 року<br>
+                    Дружина: Енн Гетевей
+                </div>
+            </section>
+
+            <section id="works">
+                <h2>Творчість</h2>
+
+                <p>
+                    Більшість відомих творів Шекспір створив у період приблизно з 1589 до 1613 року. Його ранні п'єси були переважно комедіями та історичними драмами.
+                </p>
+
+                <p>
+                    Пізніше він писав переважно трагедії. Серед його найвідоміших творів — «Гамлет», «Отелло», «Король Лір» та «Макбет».
+                </p>
+
+                <p>
+                    У пізній період творчості Шекспір створював трагікомедії, які також називають романами, та співпрацював з іншими драматургами.
+                </p>
+            </section>
+
+            <section id="facts">
+                <h2>Цікаві факти</h2>
+
+                <p>
+                    Твори Шекспіра перекладені всіма основними живими мовами світу. Його п'єси продовжують ставити, вивчати та переосмислювати в різних країнах.
+                </p>
+
+                <p>
+                    У 1623 році друзі та колишні колеги Шекспіра Джон Гемінґс і Генрі Конделл опублікували збірку його драматичних творів, відому як First Folio.
+                </p>
+
+                <p>
+                    Шекспір залишається одним із найвідоміших письменників світової літератури.
+                </p>
+            </section>
+
+        </main>
+
+        <footer>
+            Вільям Шекспір — письменник, який залишив значний слід у світовій літературі
+        </footer>
+
+    </div>
+
+</body>
+</html>
