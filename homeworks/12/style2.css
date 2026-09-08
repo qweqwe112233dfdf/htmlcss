@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+form {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.col {
+  flex: 1;
+  min-width: 250px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer {
+  width: 100%;
+  text-align: right;
+}
+
+button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 4px;
+  background: teal;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
