@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .app {
+            width: 100%;
+            max-width: 900px;
+            margin: 30px;
+
+            background-color: white;
+            border: 1px solid #e0e0e0;
+
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header  header"
+                "sidebar list";
+        }
+
+        header {
+            grid-area: header;
+
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 25px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .logo span {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .user img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+        nav.sidebar {
+            grid-area: sidebar;
+            padding: 15px 0;
+            border-right: 1px solid #e0e0e0;
+
+            display: grid;
+            grid-auto-rows: min-content;
+        }
+
+        nav.sidebar a {
+            display: grid;
+            grid-template-columns: 20px 1fr;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 20px;
+            color: #555;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav.sidebar a img {
+            width: 20px;
+            height: 20px;
+        }
+
+        nav.sidebar a.active {
+            background-color: #fbe4e4;
+            color: #333;
+        }
+
+        .nav-label {
+            white-space: nowrap;
+        }
+
+        .messages {
+            grid-area: list;
+        }
+
+        .message {
+            display: grid;
+            grid-template-columns: 20px 130px 1fr 20px 60px;
+            grid-template-areas: "star sender text attach date";
+            align-items: center;
+            gap: 12px;
+            padding: 12px 20px;
+            border-bottom: 1px solid #eee;
+            font-size: 13px;
+        }
+
+        .star { grid-area: star; }
+        .sender { grid-area: sender; }
+        .text { grid-area: text; }
+        .attach { grid-area: attach; }
+        .date { grid-area: date; }
+
+        .message .star img {
+            width: 16px;
+            height: 16px;
+            display: block;
+        }
+
+        .sender {
+            color: #333;
+        }
+
+        .text {
+            min-width: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .subject {
+            color: #333;
+        }
+
+        .preview {
+            color: #999;
+        }
+
+        .attach img {
+            width: 16px;
+            height: 16px;
+            display: block;
+        }
+
+        .date {
+            text-align: right;
+            color: #999;
+        }
+
+        @media (max-width: 800px) {
+
+            .message {
+                grid-template-columns: 20px 1fr auto auto;
+                grid-template-areas:
+                    "star sender attach date"
+                    ".    text   text   text";
+                row-gap: 4px;
+            }
+
+            .text {
+                white-space: normal;
+                display: grid;
+                gap: 3px;
+            }
+
+            .subject {
+                font-weight: bold;
+            }
+
+            .sep {
+                display: none;
+            }
+        }
+
+        @media (max-width: 550px) {
+
+            .app {
+                margin: 0;
+                grid-template-columns: 60px 1fr;
+            }
+
+            nav.sidebar a {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                padding: 12px 0;
+            }
+
+            .nav-label {
+                display: none;
+            }
+
+            .user span {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header>
+            <div class="logo">
+                <img src="/paper.png" alt="Logo">
+                <span>MY MAIL</span>
+            </div>
+
+            <div class="user">
+                <span>user@mymail.com</span>
+                <img src="/account.png" alt="User account">
+            </div>
+        </header>
+
+        <nav class="sidebar">
+            <a href="#" class="active">
+                <img src="/edit.png" alt="">
+                <span class="nav-label">Incoming</span>
+            </a>
+            <a href="#">
+                <img src="/edit.png" alt="">
+                <span class="nav-label">Outgoing</span>
+            </a>
+            <a href="#">
+                <img src="/edit.png" alt="">
+                <span class="nav-label">Drafts</span>
+            </a>
+            <a href="#">
+                <img src="/edit.png" alt="">
+                <span class="nav-label">Spam</span>
+            </a>
+        </nav>
+
+        <div class="messages">
+
+            <div class="message">
+                <div class="star"><img src="/history.png" alt=""></div>
+                <div class="sender">me, Alex</div>
+                <div class="text">
+                    <span class="subject">Trip to South America</span><span class="sep"> - </span><span class="preview">Suspendisse ut sapien non arcu rutrum tempor.</span>
+                </div>
+                <div class="attach"><img src="/security.png" alt=""></div>
+                <div class="date">12 apr.</div>
+            </div>
+
+            <div class="message">
+                <div class="star"><img src="/history.png" alt=""></div>
+                <div class="sender">me, John</div>
+                <div class="text">
+                    <span class="subject">Santa Monica trip</span><span class="sep"> - </span><span class="preview">Cras accumsan lacus quis urna ultricies, vel finibus.</span>
+                </div>
+                <div class="attach"><img src="/security.png" alt=""></div>
+                <div class="date">12 apr.</div>
+            </div>
+
+            <div class="message">
+                <div class="star"><img src="/history.png" alt=""></div>
+                <div class="sender">me, John, Alex</div>
+                <div class="text">
+                    <span class="subject">Birthday party</span><span class="sep"> - </span><span class="preview">20.04.2019</span>
+                </div>
+                <div class="date">11 apr.</div>
+            </div>
+
+            <div class="message">
+                <div class="star"><img src="/history.png" alt=""></div>
+                <div class="sender">Mari White</div>
+                <div class="text">
+                    <span class="subject">Report (march 2019)</span>
+                </div>
+                <div class="attach"><img src="/security.png" alt=""></div>
+                <div class="date">10 apr.</div>
+            </div>
+
+            <div class="message">
+                <div class="star"><img src="/history.png" alt=""></div>
+                <div class="sender">me, Elena</div>
+                <div class="text">
+                    <span class="subject">Duis semper augue</span><span class="sep"> - </span><span class="preview">Nunc finibus sem vel odio mattis.</span>
+                </div>
+                <div class="attach"><img src="/security.png" alt=""></div>
+                <div class="date">10 apr.</div>
+            </div>
+
+            <div class="message">
+                <div class="star"><img src="/history.png" alt=""></div>
+                <div class="sender">Bill, John</div>
+                <div class="text">
+                    <span class="subject">Ut congue purus</span><span class="sep"> - </span><span class="preview">Ut sit amet eros hendrerit, posuere arcu sed, vehicula.</span>
+                </div>
+                <div class="date">5 apr.</div>
+            </div>
+
+            <div class="message">
+                <div class="star"><img src="/history.png" alt=""></div>
+                <div class="sender">Stive</div>
+                <div class="text">
+                    <span class="subject">Phasellus quis velit tincidunt</span>
+                </div>
+                <div class="date">1 apr.</div>
+            </div>
+
+            <div class="message">
+                <div class="star"><img src="/history.png" alt=""></div>
+                <div class="sender">Mari White</div>
+                <div class="text">
+                    <span class="subject">Report (february 2019)</span>
+                </div>
+                <div class="attach"><img src="/security.png" alt=""></div>
+                <div class="date">10 mar.</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
