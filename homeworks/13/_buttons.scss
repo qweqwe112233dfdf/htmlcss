@@ -1,0 +1,32 @@
+.btn {
+  @include flex-center;
+  display: inline-flex;
+  padding: $spacer-sm $spacer;
+  border: none;
+  border-radius: $radius;
+  font-size: 16px;
+  font-weight: 600;
+  color: $white;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+  }
+}
+
+.btn-buy {
+  @extend .btn;
+  background-color: $success;
+}
+
+.btn-cancel {
+  @extend .btn;
+  background-color: $danger;
+}
+
+.btn-info {
+  @extend .btn;
+  background-color: $primary;
+}
