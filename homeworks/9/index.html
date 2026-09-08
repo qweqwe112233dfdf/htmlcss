@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: #333;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-content {
+            width: 100%;
+            min-width: 600px;
+            max-width: 1200px;
+            padding: 20px 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        main {
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .content {
+            width: 100%;
+            min-width: 600px;
+            max-width: 1200px;
+            padding: 30px;
+
+            display: flex;
+            gap: 30px;
+        }
+
+        .article {
+            flex: 3;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 25px;
+        }
+
+        .article h1 {
+            margin: 0 0 10px;
+        }
+
+        .date {
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .article img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .article p {
+            line-height: 1.6;
+        }
+
+        .sidebar {
+            flex: 1;
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .box h3 {
+            margin: 0 0 15px;
+        }
+
+        .event {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .event-date {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background-color: #3498db;
+            color: white;
+            font-size: 12px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        blockquote {
+            margin: 0;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">Lorem Site</div>
+
+            <nav>
+                <a href="#">News</a>
+                <a href="#">Events</a>
+                <a href="#">Courses</a>
+                <a href="#">Jobs</a>
+                <a href="#">Tests</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+
+            <div class="article">
+                <h1>What is Lorem Ipsum?</h1>
+                <div class="date">08/09/2026 13:28</div>
+
+                <img src="/background.png" alt="Стаття">
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+            </div>
+
+            <div class="sidebar">
+                <div class="box">
+                    <h3>Events</h3>
+
+                    <div class="event">
+                        <div class="event-date">7 apr</div>
+                        <div>Donec ut nisi ullamcorper, ultrices neque accumsan, maximus justo</div>
+                    </div>
+
+                    <div class="event">
+                        <div class="event-date">19 apr</div>
+                        <div>Vivamus fringilla ligula eu nunc tincidunt, in dignissim augue rutrum</div>
+                    </div>
+
+                    <div class="event">
+                        <div class="event-date">7 may</div>
+                        <div>Quisque vel quam fermentum velit luctus pulvinar eget et leo</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h3>Quote</h3>
+                    <blockquote>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</blockquote>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
