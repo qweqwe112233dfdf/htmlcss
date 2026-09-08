@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 700px;
+            padding: 40px;
+
+            background-color: #033f40;
+            color: white;
+        }
+
+        .breadcrumbs {
+            font-size: 14px;
+            color: #9fbdbd;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            line-height: 1.25;
+            margin: 0 0 30px;
+        }
+
+        .meta {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .avatar {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background-color: #cfd6d6;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .meta-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .meta-item {
+            font-size: 14px;
+        }
+
+        .meta-label {
+            color: #9fbdbd;
+            margin-bottom: 4px;
+        }
+
+        .meta-value {
+            font-weight: bold;
+        }
+
+        .meta-link {
+            color: #7fd0d6;
+        }
+
+        .meta-author { 
+            order: 1; 
+        }
+        .meta-comments { 
+            order: 2; 
+        }
+        .meta-published { 
+            order: 3; 
+        }
+        .meta-updated { 
+            order: 4; 
+        }
+
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .meta-list {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px 30px;
+            }
+
+            .meta-updated { 
+                order: 1; 
+            }
+            .meta-author { 
+                order: 2; 
+            }
+            .meta-comments { 
+                order: 3; 
+            }
+            .meta-published { 
+                order: 4; 
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="breadcrumbs">Home / Articles /</div>
+
+        <h1>The Difference Between Responsive and Adaptive Design</h1>
+
+        <div class="meta">
+            <div class="avatar">
+                <img src="/account.png" alt="account">
+            </div>
+
+            <div class="meta-list">
+                <div class="meta-item meta-updated">
+                    <div class="meta-label">Updated</div>
+                    <div class="meta-value">Nov 17, 2018</div>
+                </div>
+
+                <div class="meta-item meta-author">
+                    <div class="meta-label">Author</div>
+                    <div class="meta-value">Geoff Graham</div>
+                </div>
+
+                <div class="meta-item meta-comments">
+                    <div class="meta-label">49 Comments</div>
+                    <div class="meta-link">Go to comments</div>
+                </div>
+
+                <div class="meta-item meta-published">
+                    <div class="meta-label">Published</div>
+                    <div class="meta-value">Nov 11, 2018</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
