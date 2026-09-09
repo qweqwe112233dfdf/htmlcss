@@ -1,0 +1,15 @@
+.description{
+    background:#f2f2f2;
+    border-radius:10px;
+    padding:14px;
+    margin-bottom:24px;
+    max-width:850px;
+}
+.description p{
+    line-height:1.5;
+    margin:8px 0;
+}
+.description a{
+    color:#065fd4;
+    text-decoration:none;
+}

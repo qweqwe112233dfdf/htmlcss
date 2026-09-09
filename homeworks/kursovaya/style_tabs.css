@@ -1,0 +1,18 @@
+.tabs{
+    display:flex;
+    gap:28px;
+    border-bottom:1px solid var(--border);
+    margin-bottom:26px;
+    overflow:auto;
+}
+.tabs a{
+    padding:14px 2px;
+    text-decoration:none;
+    color:#606060;
+    white-space:nowrap;
+}
+.tabs a.active{
+    color:#111;
+    font-weight:600;
+    border-bottom:3px solid #111;
+}

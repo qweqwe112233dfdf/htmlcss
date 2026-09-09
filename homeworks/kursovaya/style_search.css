@@ -1,0 +1,32 @@
+.search{
+    height:42px;
+    display:flex;
+    flex:1;
+    max-width:650px;
+    margin:auto;
+}
+.search input{
+    min-width:0;
+    flex:1;
+    border:1px solid #ccc;
+    border-radius:22px 0 0 22px;
+    padding:0 18px;
+    font-size:16px;
+}
+.search button{
+    width:62px;
+    border:1px solid #ccc;
+    border-left:0;
+    border-radius:0 22px 22px 0;
+    background:#f8f8f8;
+    font-size:24px;
+}
+.search-page{
+    max-width:1100px;
+}
+.search{
+    height:36px;
+}
+.search button{
+    width:45px;
+}

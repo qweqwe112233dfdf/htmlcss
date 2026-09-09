@@ -1,0 +1,29 @@
+.logo{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    color:#111;
+    text-decoration:none;
+    font-size:21px;
+    font-weight:700;
+    min-width:135px;
+}
+.logo-mark{
+    display:grid;
+    place-items:center;
+    background:#f00;
+    color:#fff;
+    width:34px;
+    height:24px;
+    border-radius:7px;
+    font-size:14px;
+}
+@media(max-width:600px){
+.logo{
+    min-width:auto;
+    font-size:0;
+}
+.logo-mark{
+    width:31px;
+}
+}

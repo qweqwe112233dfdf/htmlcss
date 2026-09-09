@@ -1,0 +1,24 @@
+.chips{
+    display:flex;
+    gap:10px;
+    overflow:auto;
+    padding-bottom:24px;
+}
+.chip{
+    white-space:nowrap;
+    text-decoration:none;
+    color:#111;
+    background:#f2f2f2;
+    padding:9px 15px;
+    border-radius:8px;
+    font-size:14px;
+}
+.chip.active{
+    background:#111;
+    color:#fff;
+}
+@media(max-width:600px){
+.chips{
+    margin-bottom:2px;
+}
+}

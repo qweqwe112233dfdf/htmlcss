@@ -1,0 +1,17 @@
+.comment-form{
+    display:flex;
+    gap:10px;
+    max-width:800px;
+    margin-top:15px;
+}
+.comment-form input{
+    flex:1;
+    border:0;
+    border-bottom:1px solid #999;
+    padding:10px;
+}
+.comment-form button{
+    border:0;
+    border-radius:20px;
+    padding:9px 15px;
+}

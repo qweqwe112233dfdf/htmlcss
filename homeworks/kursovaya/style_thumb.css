@@ -1,0 +1,55 @@
+.thumb{
+    aspect-ratio:16/9;
+    border-radius:10px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:42px;
+    font-weight:700;
+    overflow:hidden;
+    background:linear-gradient(135deg,#222,#555);
+}
+.thumb:before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(130deg,rgba(255,255,255,.1),transparent);
+}
+.thumb span{
+    position:absolute;
+    bottom:8px;
+    right:8px;
+    background:#111;
+    color:#fff;
+    border-radius:4px;
+    padding:3px 5px;
+    font-size:12px;
+}
+.thumb-1{
+    background:linear-gradient(135deg,#243b55,#141e30);
+}
+.thumb-2{
+    background:linear-gradient(135deg,#6d597a,#b56576);
+}
+.thumb-3{
+    background:linear-gradient(135deg,#134e5e,#71b280);
+}
+.thumb-4{
+    background:linear-gradient(135deg,#42275a,#734b6d);
+}
+.thumb-5{
+    background:linear-gradient(135deg,#1d4350,#a43931);
+}
+.thumb-6{
+    background:linear-gradient(135deg,#16222a,#3a6073);
+}
+.thumb.small{
+    width:100%;
+}
+@media(max-width:600px){
+.thumb.small{
+    border-radius:7px;
+}
+}
