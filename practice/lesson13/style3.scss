@@ -1,0 +1,32 @@
+@mixin button-style($background, $text-color, $radius) {
+    background-color: $background;
+    color: $text-color;
+    border-radius: $radius;
+
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.button {
+    font-family: Arial, sans-serif;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+.button-primary {
+    @include button-style(#007bff, #ffffff, 8px);
+}
+
+.button-warning {
+    @include button-style(#dc3545, #ffffff, 8px);
+}
