@@ -1,11 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+    *{
+        box-sizing:border-box
+    }
+    body{
+        margin:0;
+        background:#eee;
+        font-family:Arial;
+        color:#333
+    }
+    .page{
+        width:950px;
+        margin:30px auto
+    }
+    header{
+        background:#15527d;
+        color:white;
+        padding:20px 30px;
+        display:flex;
+        justify-content:space-between
+    }
+    header h1{
+        margin:0;
+        font-size:20px;
+        font-weight:normal
+    }
+    header span{
+        font-size:12px
+    }
+
+    .search{
+        padding:15px 0
+    }
+    .fields{
+        display:flex;
+        gap:7px;
+        margin-top:10px
+    }
+    input,select{
+        padding:8px;
+        border:1px solid #ddd;
+        border-radius:3px
+    }
+    .fields input,.fields select{
+        width:145px
+    }
+    button{
+        background:#15527d;
+        color:white;
+        border:0;
+        padding:9px 20px;
+        border-radius:3px}
+
+    .content{
+        display:flex;
+        gap:15px}
+    .filters,.flights{
+        background:white;
+        padding:18px;
+        border-radius:5px
+    }
+    .filters{
+        width:210px}
+    .filters h2{
+        margin-top:0;
+        font-size:18px
+    }
+    .filters h3{
+        font-size:13px;
+        color:#15527d;
+        margin-bottom:7px}
+    .filters label{
+        display:block;
+        font-size:12px;
+        margin:6px 0
+    }
+
+    .flights{
+        flex:1;
+        padding:0;
+        overflow:hidden
+    }
+    .flights h2{
+        text-align:center;
+        font-size:15px;
+        padding:15px;
+        margin:0;
+        border-bottom:1px solid #ddd
+    }
+    .flight{
+        display:grid;
+        grid-template-columns:1.1fr 1fr 1fr 1fr .7fr .7fr;
+        gap:8px;
+        padding:13px;
+        border-bottom:1px solid #eee;
+        font-size:12px;
+        align-items:center
+    }
+    .head{color:#15527d;
+        font-size:10px;
+        font-weight:bold
+    }
+    small{
+        color:#888
+    }
+    .flight button{
+        padding:6px 12px;
+        font-size:11px}
+</style>
 </head>
+
 <body>
-    
+    <div class="page">
+
+    <header>
+        <h1>Flights - Search List</h1>
+        <span>Home / Flights Search List</span>
+    </header>
+    <div class="search">
+        <label><input type="radio" name="trip" checked> One Way</label>
+        <label><input type="radio" name="trip"> Round Trip</label>
+
+        <div class="fields">
+            <input placeholder="From">
+            <input placeholder="To">
+            <input type="date">
+            <input type="date">
+            <select>
+                <option>Economy Class</option>
+                <option>Business Class</option>
+            </select>
+            <button>Search</button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="filters">
+            <h2>Filter</h2>
+            <h3>No. of Stops</h3>
+            <label><input type="checkbox"> Non Stop</label>
+            <label><input type="checkbox"> 1 Stop</label>
+            <label><input type="checkbox"> 2+ Stops</label>
+            <h3>Price</h3>
+            <input type="number" placeholder="0" style="width:70px">
+            <input type="number" placeholder="1000" style="width:75px">
+            <h3>Airlines</h3>
+            <label><input type="checkbox"> Asiana Airlines</label>
+            <label><input type="checkbox"> American Airlines</label>
+            <label><input type="checkbox"> Air Canada</label>
+            <label><input type="checkbox"> Air India</label>
+            <label><input type="checkbox"> Jet Airways</label>
+            <label><input type="checkbox"> SpiceJet</label>
+            <label><input type="checkbox"> IndiGo</label>
+        </div>
+
+        <div class="flights">
+            <h2>Delhi to Sydney</h2>
+
+            <div class="flight head">
+                <span>Airlines</span><span>Departure</span><span>Duration</span>
+                <span>Arrival</span><span>Price</span><span></span>
+            </div>
+
+            <div class="flight">
+                <span>IndiGo<br><small>6E-2489</small></span>
+                <span>23:30<br><small>Delhi</small></span>
+                <span>18h 55m<br><small>Non Stop</small></span>
+                <span>18:15<br><small>Sydney</small></span>
+                <span>$980</span><button>Book</button>
+            </div>
+
+            <div class="flight">
+                <span>IndiGo<br><small>6E-2489</small></span>
+                <span>23:30<br><small>Delhi</small></span>
+                <span>18h 55m<br><small>Non Stop</small></span>
+                <span>18:15<br><small>Sydney</small></span>
+                <span>$980</span><button>Book</button>
+            </div>
+
+            <div class="flight">
+                <span>IndiGo<br><small>6E-2489</small></span>
+                <span>23:30<br><small>Delhi</small></span>
+                <span>18h 55m<br><small>Non Stop</small></span>
+                <span>18:15<br><small>Sydney</small></span>
+                <span>$980</span><button>Book</button>
+            </div>
+
+            <div class="flight">
+                <span>IndiGo<br><small>6E-2489</small></span>
+                <span>23:30<br><small>Delhi</small></span>
+                <span>18h 55m<br><small>Non Stop</small></span>
+                <span>18:15<br><small>Sydney</small></span>
+                <span>$980</span><button>Book</button>
+            </div>
+
+        </div>
+    </div>
+</div>
 </body>
 </html>
