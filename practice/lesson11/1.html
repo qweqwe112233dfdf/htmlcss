@@ -1,51 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background-color: darkslategrey;
-            font-family: Arial, Helvetica, sans-serif;
-            display: flex;
-            justify-content: center;
-            padding: 30px;
-        }
+    <Style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #eeeeee;
+    }
+
+    .container {
+        width: 800px;
+        margin: 30px auto;
+    }
+
+    header {
+        background: lightblue;
+        text-align: center;
+        padding: 30px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .block {
+        background: white;
+        padding: 25px;
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 15px;
+        padding: 20px;
+        background: lightblue;
+        text-align: center;
+    }
+
+
+    /* Екран менше 600px */
+    @media (max-width: 600px) {
+
         .container {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            min-height: 100vh;
-            padding: 30px;
-
+            width: 90%;
+            margin: 15px auto;
         }
+
         header {
-            grid-column: span 12;
-            color: gray;
-            font-size: 18px;
-            margin-bottom: 40px;
-        }
-        main {
-            grid-column: 2 / 12;
-        }
-        h1 {
-            font-size: 55px;
-            width: 600px;
-            margin-bottom: 60px;
-        }
-        .info {
-            display: grid;
-            grid-template-columns: 100px repeat(4, 1fr);
-            gap: 30px;
+            padding: 20px;
         }
 
-    </style>
+        header h1 {
+            font-size: 26px;
+        }
+
+        main {
+            grid-template-columns: 1fr;
+        }
+
+        .block {
+            padding: 15px;
+        }
+}
+
+    </Style>
 </head>
 <body>
-    
+
+    <div class="container">
+
+        <header>
+            <h1>День знань</h1>
+            <p>Запрошуємо вас на свято!</p>
+        </header>
+
+        <main>
+            <div class="block">
+                <h2>Дата</h2>
+                <p>1 вересня 2026 року</p>
+            </div>
+
+            <div class="block">
+                <h2>Місце</h2>
+                <p>Актова зала</p>
+            </div>
+
+            <div class="block">
+                <h2>Час</h2>
+                <p>8:00</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Чекаємо на вас!</p>
+        </footer>
+
+    </div>
+
 </body>
 </html>
