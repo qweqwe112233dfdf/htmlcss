@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cats Gallery</title>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery {
+    width: min(805px, 94vw);
+    border: 1px solid #cfcfcf;
+}
+
+header {
+    height: 112px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 1px solid #cfcfcf;
+}
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.large-photo {
+    height: 440px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fafafa;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.large-photo iframe {
+    width: 270px;
+    height: 270px;
+
+    border: 2px solid #777777;
+    background: #ffffff;
+}
+
+.thumbs {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.thumbs a {
+    height: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-right: 1px solid #cfcfcf;
+}
+
+.thumbs a:last-child {
+    border-right: 0;
+}
+
+.thumbs a:hover {
+    background: #f3f3f3;
+}
+
+.thumbs img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="gallery">
+
+        <header>
+            <h1>CATS GALLERY</h1>
+        </header>
+
+        <div class="large-photo">
+            <iframe name="bigPhoto" src="/cat_tied_256 (4).png" title="Large cat image">
+            </iframe>
+        </div>
+
+        <div class="thumbs">
+
+            <a href="/cat_tied_256 (4).png" target="bigPhoto">
+                <img src="/cat_tied_64 (4).png" alt="Cat with yarn">
+            </a>
+
+            <a href="/cat_clean_256 (4).png" target="bigPhoto">
+                <img src="/cat_clean_64 (4).png" alt="Clean cat">
+            </a>
+
+            <a href="/cat_purr_256 (4).png" target="bigPhoto">
+                <img src="/cat_purr_64 (4).png" alt="Purring cat">
+            </a>
+
+            <a href="/cat_cage_256 (4).png" target="bigPhoto">
+                <img src="/cat_cage_64 (4).png" alt="Cat in cage">
+            </a>
+
+            <a href="/cat_eyes_256 (4).png" target="bigPhoto">
+                <img src="/cat_eyes_64 (4).png" alt="Cat eyes">
+            </a>
+
+            <a href="/cat_box_256 (4).png" target="bigPhoto">
+                <img src="/cat_box_64 (4).png" alt="Cat in box">
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
